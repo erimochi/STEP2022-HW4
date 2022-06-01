@@ -16,7 +16,7 @@ Wikipediaのリンク関係をもとに、あるページからあるページ�
   - 発見: 経路を表示
   - 未発見: `Route from [start page name] to [goal page name] is not found`のメッセージ
 
-始点終点を指定しない場合、 「Google→渋谷」 の経路を検索する。
+始点終点を指定しない場合、 「Google→渋谷」 の経路を検索する。(シェルスクリプトでコンパイル・実行同時に可能)
 
 
 ### DFS
