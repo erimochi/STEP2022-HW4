@@ -11,8 +11,11 @@ Wikipediaのリンク関係をもとに、あるページからあるページ�
 
 
 ## 使い方
+```
+$ g++ hw1_bfs.cpp
+$ ./a.out [start page name] [goal page name]
+```
 
-基本的にコンパイル後`$ ./a.out [start page name] [goal page name]`で検索される。
   - 発見: 経路を表示
   - 未発見: `Route from [start page name] to [goal page name] is not found`のメッセージ
 
@@ -46,6 +49,8 @@ $ sh hw1_bfs.sh
 ### 環境
   - macOS 12.2.1
   - Apple clang version 13.0.0 (clang-1300.0.29.30)
+  - lldb-1300.0.42.3
+  - Swift version 5.5.2-dev
 
 ### 問題
 - 再帰的なDFSで、「Google→渋谷」検索時、Segmentation faultが出る。
