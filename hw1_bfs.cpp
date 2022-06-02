@@ -55,7 +55,6 @@ void show_route(const vector<string>& pages, const vector<long long>& route, str
 }
 
 
-
 vector<long long > route_bfs(const vector<string>& pages, const vector<vector<long long> >& links,  long long p_num, string start, string goal){
 	long long s_index = title_to_index(pages, start);
 	long long g_index = title_to_index(pages, goal);
@@ -71,12 +70,9 @@ vector<long long > route_bfs(const vector<string>& pages, const vector<vector<lo
 	
 	vector<long long> route = bfs(links, s_index, g_index, visited); 
 	
-	// In case route exists, add the information of start
 	return route;
 }
 
-
- 
 
 vector<long long> bfs(const vector<vector<long long> >& links, long long start, long long goal, vector<long long>& visited){
 	 vector<long long> found_route;
